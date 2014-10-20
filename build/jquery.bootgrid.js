@@ -492,8 +492,8 @@
                     {
                         var commandList = {
                             first: 1,
-                            prev: that.current - 1,
-                            next: that.current + 1,
+                            prev: Number(that.current) - 1,
+                            next: Number(that.current) + 1,
                             last: that.totalPages
                         };
                         var command = $this.attr("href").substr(1);
